@@ -1,0 +1,1 @@
+#this is aruntime variale file
