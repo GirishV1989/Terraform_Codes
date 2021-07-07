@@ -7,3 +7,11 @@ module "module_Vnet" {
     source = "./Module_Vnet"
     resource_group_name = var.resource_Group_Name
 }
+
+resource "azurerm_subnet" "example_Subnet" {
+  name                 = "example-subnet"
+  resource_group_name  = var.resource_Group_Name
+  virtual_network_name = "Test_vnet"
+  address_prefixes     = ["10.1.0.0/24"]
+  
+}
