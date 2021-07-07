@@ -5,13 +5,3 @@ provider "azurerm" {
   tenant_id       = "372ee9e0-9ce0-4033-a64a-c07073a91ecd"
   features {}
 }
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "tstate_Girish"
-    storage_account_name = "800xatstate_Girish"
-    container_name       = "800xa_Girish"
-    key                  = "terraform.tfstate"
-    access_key           = "3jrOU/K4OE7JcZ5Q+K3Ea5N8fSHuj1pDagnuaiwj+yq6mZzISdbmf2VPKJtfCaYA4EPgQ/S+VrCzwqbAbn9ChA=="
-  }
-
-}
